@@ -632,7 +632,8 @@ class AfterDetailerScript(scripts.Script):
 
     @staticmethod
     def is_img2img_inpaint(p) -> bool:
-        return hasattr(p, "image_mask") and bool(p.image_mask)
+        # return hasattr(p, "image_mask") and bool(p.image_mask)
+        return False
 
     @rich_traceback
     def process(self, p, *args_):
